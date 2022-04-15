@@ -41,7 +41,6 @@ def acceptConnections():
 def setup():
     print("\n\t\t\t\t\t\tIP MESSENGER\n")
 
-    # Getting global values
     global PORT
     global IP_ADDRESS
     global SERVER
@@ -58,13 +57,9 @@ def setup():
 
     acceptConnections()
 
-
-#------ Student Activity 1 Start---------------
-
-
 setup_thread = Thread(target=setup)           #receiving multiple messages
 setup_thread.start()
 
 
 
-#------ Student Activity 1 End---------------
+
